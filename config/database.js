@@ -2,10 +2,7 @@ import moongose from 'mongoose';
 
 const connectDb = async () => {
     try {
-        await moongose.connect(process.env.MONGO_URI, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
+        await moongose.connect(process.env.MONGO_URI);
 
         console.log('MongoDb Conectado com sucesso!');
     } catch (e) {
