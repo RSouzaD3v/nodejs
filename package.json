@@ -1,6 +1,6 @@
 {
-  "name": "javascript",
-  "version": "1.0.0",
+  "name": "nodejs",
+  "version": "0.0.1",
   "description": "",
   "main": "main.js",
   "type": "module",
@@ -8,7 +8,7 @@
     "dev": "nodemon main.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rafael F. Souza (rsouzad3v)",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
