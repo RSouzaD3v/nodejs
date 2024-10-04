@@ -1,5 +1,5 @@
 import express, { json } from 'express';
-import { router } from './router.js';
+import userRoutes from './routes/userRoutes.js';
 import connectDb from './config/database.js';
 import dotenv from 'dotenv';
 
@@ -10,7 +10,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(router);
+app.use('/api', userRoutes);
 
 connectDb();
 
